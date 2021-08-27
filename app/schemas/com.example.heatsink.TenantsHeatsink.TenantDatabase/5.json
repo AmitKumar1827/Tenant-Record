@@ -1,0 +1,76 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 5,
+    "identityHash": "4da98ad9f5906b520f9348636b0648d9",
+    "entities": [
+      {
+        "tableName": "tenants",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`tenantName` TEXT, `tenantPropertyId` TEXT, `tenantId` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `tenantMobile` TEXT, `tenantEmail` TEXT, `idProofName` TEXT, `tenantIdProof` TEXT, `tenantRent` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "tenantName",
+            "columnName": "tenantName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "tenantPropertyId",
+            "columnName": "tenantPropertyId",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "tenantId",
+            "columnName": "tenantId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "tenantMobile",
+            "columnName": "tenantMobile",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "tenantEmail",
+            "columnName": "tenantEmail",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "idProofName",
+            "columnName": "idProofName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "tenantIdProof",
+            "columnName": "tenantIdProof",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "tenantRent",
+            "columnName": "tenantRent",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "tenantId"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '4da98ad9f5906b520f9348636b0648d9')"
+    ]
+  }
+}

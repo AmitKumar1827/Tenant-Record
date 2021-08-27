@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.heatsink">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:requestLegacyExternalStorage="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Tenants Record"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:screenOrientation="userPortrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:node="replace">
+        <activity android:name=".validation"></activity>
+        <activity android:name=".editdetail" />
+        <activity android:name=".logindetails" />
+        <activity android:name=".helpandsupport1" />
+        <activity android:name=".aboutUsactivity" />
+        <activity android:name=".backupactivity" />
+        <activity android:name=".termCondition" />
+        <activity android:name=".splashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".privacyPolicy" />
+        <activity android:name=".TransactionHeatsink.edit_transaction" />
+        <activity android:name=".TransactionHeatsink.particularTransactionActivity" />
+        <activity android:name=".TenantsHeatsink.edit_tenant" />
+        <activity android:name=".TenantsHeatsink.particularTenantActivity" />
+        <activity android:name=".PropertyHeatsink.edit_property" />
+        <activity android:name=".PropertyHeatsink.particularPropertyActivity" />
+        <activity android:name=".BankHeatsink.edit_banks" />
+        <activity android:name=".BankHeatsink.particularBankActivity" />
+        <activity android:name=".TenantsHeatsink.addTenant_activity" />
+        <activity android:name=".PropertyHeatsink.addProperty_activity" />
+        <activity android:name=".BankHeatsink.addBank_activity" />
+        <activity android:name=".BankHeatsink.banks_activity" />
+        <activity android:name=".TenantsHeatsink.tenants_activity" />
+        <activity android:name=".PropertyHeatsink.property_activity" />
+        <activity android:name=".TransactionHeatsink.addTransaction_activity" />
+        <activity android:name=".TransactionHeatsink.transaction_activity" />
+        <activity android:name=".OwnersHeatsink.edit_owners" />
+        <activity android:name=".OwnersHeatsink.particularOwnerActivity" />
+        <activity android:name=".OwnersHeatsink.addOwners_activity" />
+        <activity android:name=".OwnersHeatsink.owners_activity" />
+        <activity android:name=".setting" />
+        <activity android:name=".MainActivity" />
+
+        <service android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".logindetails">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="6dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Light">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_transaction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:elevation="6dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+
+                <TextView
+                    android:id="@+id/Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="Enter User Detail"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    />
+
+
+
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="#ffffff"
+
+        android:layout_below="@id/appbar"
+
+        android:orientation="vertical"
+        android:gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="#ffffff"
+        android:id="@+id/layout2"
+
+        android:layout_below="@id/appbar"
+        android:layout_weight="1"
+
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+
+
+
+
+        <EditText
+            android:id="@+id/userName"
+            android:background="@drawable/edit_textbg"
+            android:layout_width="300dp"
+            android:layout_height="56dp"
+            android:elevation="0.5dp"
+            android:foreground="#000000"
+            android:textSize="14dp"
+            android:layout_gravity="center"
+            android:hint="Enter Name"
+            android:inputType="text"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/emailuser"
+            android:background="@drawable/edit_textbg"
+            android:layout_width="300dp"
+            android:layout_height="56dp"
+            android:elevation="0.5dp"
+            android:foreground="#000000"
+            android:textSize="14dp"
+            android:layout_gravity="center"
+            android:hint="Enter Email ( Eg : abc@gmail.com )"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/mobileuser"
+            android:background="@drawable/edit_textbg"
+            android:layout_width="300dp"
+            android:layout_height="56dp"
+            android:elevation="0.5dp"
+            android:foreground="#000000"
+            android:textSize="14dp"
+            android:layout_gravity="center"
+            android:hint="Mobile Number (Optional)"
+            android:inputType="phone"
+            android:layout_marginBottom="50dp"
+            android:gravity="center"/>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+
+        android:background="#ffffff"
+       android:layout_below="@+id/layout2"
+
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:id="@+id/saveuser"
+            android:textStyle="bold"
+            android:layout_gravity="right"
+
+            android:layout_marginRight="40dp"
+            android:textSize="13dp"
+            android:textColor="#000000"
+            android:elevation="6dp"
+
+
+            android:text="Save &amp; continue"
+            android:background="@drawable/button_bg"
+
+            />
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

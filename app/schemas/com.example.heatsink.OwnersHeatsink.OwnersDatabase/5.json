@@ -1,0 +1,70 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 5,
+    "identityHash": "1e4b6b6e474ea2e6800c9c0083e1d777",
+    "entities": [
+      {
+        "tableName": "owners",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`owners_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `owners_name` TEXT, `owners_mobile` TEXT, `owners_email` TEXT, `owners_address` TEXT, `owners_idName` TEXT, `owners_idProof` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "owners_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "owners_name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mobile",
+            "columnName": "owners_mobile",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "email",
+            "columnName": "owners_email",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "address",
+            "columnName": "owners_address",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "idName",
+            "columnName": "owners_idName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "idProof",
+            "columnName": "owners_idProof",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "owners_id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '1e4b6b6e474ea2e6800c9c0083e1d777')"
+    ]
+  }
+}

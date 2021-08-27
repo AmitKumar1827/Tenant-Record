@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "669150629123",
+    "firebase_url": "https://tenant-records.firebaseio.com",
+    "project_id": "tenant-records",
+    "storage_bucket": "tenant-records.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:669150629123:android:17b42ad91445b121106d36",
+        "android_client_info": {
+          "package_name": "com.example.heatsink"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "669150629123-airn1gf2fkvs2rc29u0md37r6ihft62t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpbIE6wpWPTYMtKWotgFPeAdhuwTv7G0w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "669150629123-airn1gf2fkvs2rc29u0md37r6ihft62t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
